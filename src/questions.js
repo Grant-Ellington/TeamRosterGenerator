@@ -101,9 +101,6 @@ const internQuestions = [
     }
 ]
 
-module.exports = {
-    managerQuestions,
-    engineerQuestions,
-    internQuestions
-
-};
+module.exports = managerQuestions;
+module.exports = engineerQuestions;
+module.exports = internQuestions;
