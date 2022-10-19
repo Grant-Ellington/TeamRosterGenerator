@@ -3,8 +3,9 @@ const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 
-const managerQuestions = require('./src/questions')
-const internQuestions = require('./src/questions')
+const managerQuestions = require('./src/managerQuestions')
+const internQuestions = require('./src/internQuestions')
+const engineerQuestions = require('./src/engineerQuestions')
 
 console.log(managerQuestions)
 
