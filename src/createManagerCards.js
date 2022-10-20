@@ -1,15 +1,18 @@
-createManagerCard = (managerData) => {
-    managerCard = `       
+// const cards = require('../index')
+const newManager = require('../index')
+
+createManagerCard = () => {
+     managerCard = `       
     <div class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="card-title">${managerData.managerName}</h5>
+      <h5 class="card-title">${newManager.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
-      <p class="card-text">${managerData.managerId}</p>
-      <a href=""mailto:${managerData.managerEmail} = Feedback&body = Message">${managerData.managerEmail}</a>
-      <a href="#" class="card-text">${managerData.managerOfficeNum}</a>
+      <p class="card-text">${newManager.id}</p>
+      <a href=""mailto:${newManager.email} = Feedback&body = Message">${newManager.email}</a>
+      <a href="#" class="card-text">${newManager.officeNumber}</a>
     </div>`
-    cards.push(managerCard);
+
+    //console.log(managerCard)
     return managerCard
 };
-
 module.exports = createManagerCard;
