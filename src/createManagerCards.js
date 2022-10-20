@@ -1,7 +1,8 @@
 // const cards = require('../index')
 const newManager = require('../index')
 
-createManagerCard = () => {
+createManagerCard = (newManager) => {
+    console.log(newManager.name, newManager.email)
      managerCard = `       
     <div class="card" style="width: 18rem;">
     <div class="card-body">
@@ -12,7 +13,7 @@ createManagerCard = () => {
       <a href="#" class="card-text">${newManager.officeNumber}</a>
     </div>`
 
-    //console.log(managerCard)
+    console.log(managerCard)
     return managerCard
 };
 module.exports = createManagerCard;

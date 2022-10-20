@@ -23,9 +23,9 @@ module.exports = cards
 function executeManager (){
     inquirer.prompt(managerQuestions).then( (data)=> {
         const newManager = new Manager(data.name, data.id, data.email, data.officeNumber)
-        console.log(createManagerCard(newManager.name, newManager.id, newManager.email, newManager.officeNumber))
-    })
-}
+        console.log(cards.push(createManagerCard(newManager)))
+    });
+};
 
 function init () {
 executeManager();
