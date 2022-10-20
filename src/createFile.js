@@ -1,3 +1,6 @@
+const cards = require('../index')
+const fs = require('fs')
+
 function createFile () { 
     
     const fileHTML = `<!DOCTYPE html>

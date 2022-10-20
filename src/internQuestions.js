@@ -1,23 +1,23 @@
 const internQuestions = [
     {
         type: 'input',
-        name: 'internName',
+        name: 'name',
         message:"What is the intern's name?",
     },
     {
         type: 'input',
-        name: 'internId',
+        name: 'id',
         message:"What is the intern's employee id?",
     },
     {
         type: 'input',
-        name: 'internEmail',
+        name: 'email',
         message:"What is the intern's email address?",
     },
     {
         type: 'input',
-        name: 'internGit',
-        message:"What is the intern's Github username?",
+        name: 'school',
+        message:"What is the intern's school?",
     },
     {
         type: 'list',
