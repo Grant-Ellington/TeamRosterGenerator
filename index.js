@@ -37,7 +37,7 @@ function executeManager (){
         } else{
             createFile(cards)
         }
-    });
+    });if 
 };
 
 function executeEngineer (){
