@@ -23,12 +23,20 @@ module.exports = cards
 function executeManager (){
     inquirer.prompt(managerQuestions).then( (data)=> {
         const newManager = new Manager(data.name, data.id, data.email, data.officeNumber)
-        console.log(cards.push(createManagerCard(newManager)))
+        cards.push(createManagerCard(newManager))
     });
 };
 
+function executeEngineer (){
+    inquirer.prompt(engineerQuestions).then( (data)=> {
+        const newEngineer = new Engineer(data.name, data.id, data.email, data.github);
+        cards.push(createEngineerCard(newEngineer))
+        console.log(cards)
+    })
+}
+
 function init () {
-executeManager();
+executeEngineer();
 }
 
 init();
