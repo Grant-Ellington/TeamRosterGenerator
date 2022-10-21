@@ -14,8 +14,7 @@ const createFile = require('./src/createFile')
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { hasUncaughtExceptionCaptureCallback } = require('process');
-const { createInflate } = require('zlib');
+
 
 
 const cards = [];
@@ -37,7 +36,7 @@ function executeManager (){
         } else{
             createFile(cards)
         }
-    });if 
+    });
 };
 
 function executeEngineer (){
@@ -61,7 +60,6 @@ function executeIntern() {
     inquirer.prompt(internQuestions).then( (data) => {
         const newIntern = new Intern(data.name, data.id, data.email, data.school)
         cards.push(createInternCard(newIntern))
-        console.log(cards)
 
         if (data.internChoice === 'Manager'){
             executeManager()
@@ -77,7 +75,7 @@ function executeIntern() {
 }
 
 function init () {
-executeIntern();
+executeManager();
 }
 
 init();
