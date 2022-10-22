@@ -27,11 +27,11 @@ function executeManager (){
         const newManager = new Manager(data.name, data.id, data.email, data.officeNumber)
         cards.push(createManagerCard(newManager))
 
-        if (data.managerChoice === 'Manager'){
+        if (data.managerChoices === 'Manager'){
             executeManager()
-        } else if(data.managerChoice === 'Engineer'){
+        } else if(data.managerChoices === 'Engineer'){
             executeEngineer()
-        }else if(data.managerChoice === 'Intern'){
+        }else if(data.managerChoices === 'Intern'){
             executeIntern()
         } else{
             createFile(cards)
@@ -44,11 +44,11 @@ function executeEngineer (){
         const newEngineer = new Engineer(data.name, data.id, data.email, data.github);
         cards.push(createEngineerCard(newEngineer))
 
-        if (data.engineerChoice === 'Manager'){
+        if (data.engineerChoices === 'Manager'){
             executeManager()
-        } else if(data.engineerChoice === 'Engineer'){
+        } else if(data.engineerChoices === 'Engineer'){
             executeEngineer()
-        }else if(data.engineerChoice === 'Intern'){
+        }else if(data.engineerChoices === 'Intern'){
             executeIntern()
         } else{
             createFile(cards)
@@ -61,11 +61,11 @@ function executeIntern() {
         const newIntern = new Intern(data.name, data.id, data.email, data.school)
         cards.push(createInternCard(newIntern))
 
-        if (data.internChoice === 'Manager'){
+        if (data.internChoices === 'Manager'){
             executeManager()
-        } else if(data.internChoice === 'Engineer'){
+        } else if(data.internChoices === 'Engineer'){
             executeEngineer()
-        }else if(data.internChoice === 'Intern'){
+        }else if(data.internChoices === 'Intern'){
             executeIntern()
         } else{
             createFile(cards)
