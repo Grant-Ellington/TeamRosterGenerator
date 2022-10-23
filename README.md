@@ -71,3 +71,7 @@
   ![test to test the created classes outputs](./img/test.png)
   
 
+Here is an example of the program running
+https://user-images.githubusercontent.com/109107643/197419208-3e6227a0-dabf-45e2-9bc7-c203815f0456.mov
+
+
